@@ -1,0 +1,27 @@
+name: opensense_training
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - numpy
+  - scipy
+  - pandas
+  - matplotlib
+  - numba
+  - h5py
+  - xarray
+  - sparse
+  - netcdf4
+  - shapely
+  - pyproj
+  - tqdm
+  - pykrige
+  - scikit-learn
+  - future
+  - jupyterlab
+  - notebook
+  - bottleneck
+  - pytest
+  - wradlib
+  - git 
+  - pysteps
