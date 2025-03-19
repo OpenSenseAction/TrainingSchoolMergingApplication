@@ -23,5 +23,7 @@ dependencies:
   - bottleneck
   - pytest
   - wradlib
-  - git 
+  - git
   - pysteps
+  - rasterio
+  - rioxarray
