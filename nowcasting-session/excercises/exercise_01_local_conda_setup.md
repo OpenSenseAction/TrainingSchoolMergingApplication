@@ -4,30 +4,13 @@ In this exercise we will install pysteps and its dependencies in a local conda e
 
 ## Installation of pysteps and dependencies in local environment
 
-Make sure you have a Python package manager, such as mamba, micromamba or miniforge.
-
-Then, in a command prompt or shell (such as conda prompt or miniforge prompt), run the following steps.
+Follow the steps in the [installation guide](../../env_installation_guide.md) to install the conda environment with the required packages (if you haven't done so already).
 
 Download the course material to a local folder (do not forget to first change your directory to the folder where you would like to put the course material):
-`git clone https://github.com/OpenSenseAction/training_school_merging_application.git`
+`git clone https://github.com/OpenSenseAction/TrainingSchoolMergingApplication.git`
 
 Change directory to the OpenSense Nowcasting workshop material:
-`cd training_school_merging_application/nowcasting-session`
-
-> TODO: Correct instructions for the environment
-
-Now, create a specific Python environment called pysteps:
-`mamba create -n pysteps python=3.12 poetry`
-or with conda:
-`conda create -n pysteps python=3.12 poetry`
-
-Activate the environment:
-`mamba activate pysteps`
-or with conda:
-`conda activate pysteps`
-
-And install pysteps and all dependencies through the `poetry.lock` file that is already in your folder.
-`poetry install`
+`cd TrainingSchoolMergingApplication/nowcasting-session`
 
 ## Check if the installation was successful
 
