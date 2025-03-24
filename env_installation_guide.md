@@ -9,7 +9,7 @@ Follow the instructions according to your operating system.
 1. Download the miniforge windows installer: https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-Windows-x86_64.exe
 2. Execute the installer and follow the instructions. Please use the default settings.
 3. Test if installation was successful, by opening the programme "Miniforge Prompt" and see if *conda* outputs the options of conda
-4. Download the following file: https://github.com/OpenSenseAction/PrePEP_short_course_OS/edit/main/env_installation_guide.md 
+4. Download the following file: [https://github.com/OpenSenseAction/PrePEP_short_course_OS/edit/main/env_installation_guide.md ](https://github.com/OpenSenseAction/TrainingSchoolMergingApplication/blob/main/environment.yml)
 5. Open the program called “Miniforge Prompt”
 6. In the command line of “Miniforge Prompt” navigate to the repository downloaded in (4) to the location of the downloaded file “environment.yml” by using e.g. cd C:/User/username/Download/. (If you are not yet familiar with the command line, you can have a look at [this tutorial](https://www.digitalcitizen.life/command-prompt-how-use-basic-commands/))
 7. When you are in the same directory as the downloaded “environment.yml” file, execute the following command on the command line: *conda env create --file environment.yml*
