@@ -1,3 +1,6 @@
 [submodule "mergeplg"]
 	path = mergeplg
 	url = https://github.com/OpenSenseAction/mergeplg.git
+[submodule "poligrain"]
+	path = poligrain
+	url = https://github.com/OpenSenseAction/poligrain.git
