@@ -28,8 +28,5 @@ Besides a visual inspection of your results, computing verification metrics will
 
 Calculate the probability of detection (POD), false alarm ratio (FAR), equitable threat score (ETS), and the mean error (ME) for the nowcast as a function of leadtime, and visualize them.
 
-### Exporting nowcasts
-Let's export the nowcasts to NetCDF format. For exporting, the exporter needs to first be initialized before it can be used to save the nowcasts. Remember to close the exporter after saving the nowcast.
-
 ## Create nowcasts and compare nowcasts with all training school datasets.
 Repeat the steps bove to create nowcasts for all training school datasets (radar, PWS and CMLs) and visualize them all together. What can you say about the quality of the nowcasts with the different products?
