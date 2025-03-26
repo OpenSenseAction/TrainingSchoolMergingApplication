@@ -1,0 +1,3 @@
+[submodule "mergeplg"]
+	path = mergeplg
+	url = https://github.com/OpenSenseAction/mergeplg.git
