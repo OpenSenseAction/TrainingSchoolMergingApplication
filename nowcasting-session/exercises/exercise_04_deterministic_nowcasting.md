@@ -4,7 +4,8 @@ The purpose of this exercise is to illustrate how to construct, visualize and ap
 In this exercise you will construct your first nowcast using the data of the OpenSense training school, including radar and opportunistic datasets.
 
 ## Import data and perform the pre-processing steps
-The starting point of this exercise are the processing steps you have taken in the previous exercices. Hence, make sure to load the training school data and do the pre-processing steps (transformations, derivation of advection fields, etc.). After these pre-processing steps, we are ready to construct our first nowcast.
+
+The starting point of this exercise are the processing steps you have taken in the previous exercises. Hence, make sure to load the training school data and do the pre-processing steps (transformations, derivation of advection fields, etc.). After these pre-processing steps, we are ready to construct our first nowcast.
 
 ## Deterministic nowcasts
 In the deterministic nowcasting part, we will use the loaded data to create a precipitation nowcast and calculate different verification metrics to assess the skill of the nowcast compared to observations.
@@ -28,5 +29,6 @@ Besides a visual inspection of your results, computing verification metrics will
 
 Calculate the probability of detection (POD), false alarm ratio (FAR), equitable threat score (ETS), and the mean error (ME) for the nowcast as a function of leadtime, and visualize them.
 
-## Create nowcasts and compare nowcasts with all training school datasets.
-Repeat the steps bove to create nowcasts for all training school datasets (radar, PWS and CMLs) and visualize them all together. What can you say about the quality of the nowcasts with the different products?
+## Create nowcasts and compare nowcasts with all training school datasets
+
+Repeat the steps above to create nowcasts for all training school datasets (radar, PWS and CMLs) and visualize them all together. What can you say about the quality of the nowcasts with the different products?

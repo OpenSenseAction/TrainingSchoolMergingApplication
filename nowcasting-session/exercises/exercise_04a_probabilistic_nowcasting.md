@@ -1,14 +1,15 @@
 # Exercise 4: Nowcasting methods - Part 2 probabilistic nowcasting
 
-The purpose of this exercise is to illustrate how to construct, visualize and apply verification metrics to a probablistic (ensemble) nowcast using pysteps. The setup of this exercise is fairly similar to [exercise_04](./exercise_04_deterministic_nowcasting.md), but instead of a deterministic nowcast, we will construct an ensemble nowcast with 10 ensemble members using the STEPS model.
+The purpose of this exercise is to illustrate how to construct, visualize and apply verification metrics to a probabilistic (ensemble) nowcast using pysteps. The setup of this exercise is fairly similar to [exercise_04](./exercise_04_deterministic_nowcasting.md), but instead of a deterministic nowcast, we will construct an ensemble nowcast with 10 ensemble members using the STEPS model.
 
 ## Import data and perform the pre-processing steps
-The starting point of this exercise are the processing steps you have taken in the previous exercices. Hence, make sure to load the training school data and do the pre-processing steps (transformations, derivation of advection fields, etc.). After these pre-processing steps, we are ready to construct our first nowcast.
+
+The starting point of this exercise are the processing steps you have taken in the previous exercises. Hence, make sure to load the training school data and do the pre-processing steps (transformations, derivation of advection fields, etc.). After these pre-processing steps, we are ready to construct our first nowcast.
 
 ## Construct the probabilistic nowcasts
 In this probabilistic nowcasting part, we will repeat the same basic steps of a deterministic nowcast, but, instead of a deterministic forecast, we will construct and verify a probabilistic STEPS nowcast with 10 ensemble members. We can get an estimate of the uncertainty in our forecast with a probabilistic forecast. It can, for instance, tell us what the (forecast) probability is that rainfall above a certain threshold will take place at location *x*.
 
-The first step is to make a probablistic nowcast using the STEPS approach that is explained in [the STEPS nowcast gallery example](https://pysteps.readthedocs.io/en/latest/auto_examples/plot_steps_nowcast.html#stochastic-nowcast-with-steps). You can follow this example and adjust the code where necessary to make it work for our test case.
+The first step is to make a probabilistic nowcast using the STEPS approach that is explained in [the STEPS nowcast gallery example](https://pysteps.readthedocs.io/en/latest/auto_examples/plot_steps_nowcast.html#stochastic-nowcast-with-steps). You can follow this example and adjust the code where necessary to make it work for our test case.
 
 Make an ensemble nowcast with 10 ensemble members and 4 lead times of 15 min (one hour in total). You can follow the aforementioned gallery example. For a list of all options when configuring the STEPS nowcast, see the [pysteps documentation](https://pysteps.readthedocs.io/en/latest/pysteps_reference/nowcasts.html#pysteps-nowcasts-steps).
 
