@@ -23,5 +23,5 @@ dependencies:
   - bottleneck
   - pytest
   - wradlib
-  - git 
+  - git
   - pysteps
