@@ -25,5 +25,3 @@ dependencies:
   - wradlib
   - git
   - pysteps
-  - rasterio
-  - rioxarray
