@@ -1,4 +1,5 @@
-example_data
+# Data file from pysteps example data
+**/pysteps_data/*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
