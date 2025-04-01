@@ -1,8 +1,9 @@
 # Data file from pysteps example data
 **/pysteps_data/*
 
-# poligrain example data
+# downloaded example data
 os-merging-session/example_data
+intro_session/example_data
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
