@@ -4,9 +4,10 @@ The purpose of this exercise is to get the users acquainted with the input data 
 
 ## Read an example dataset to get to know the pysteps data structure
 
-From the datasets downloaded in the [previous exercise](exercise_01_local_conda_setup.md), pick either the "fmi" or "mch" dataset that have been tested to work with this exercise. You can use [pysteps.datasets.load_dataset](https://pysteps.readthedocs.io/en/stable/generated/pysteps.datasets.load_dataset.html#pysteps.datasets.load_dataset) for this purpose. For the mch data, choose the time period between 2015-05-15 15:50-16:50 UTC. For fmi, choose 2016-09-28 14:45-15:50 UTC. Use pysteps functions to read the time series into a numpy array and examine the metadata.
+From the datasets downloaded in the [previous exercise](exercise_01_local_conda_setup.md), pick either the "fmi" or "mch" dataset that have been tested to work with this exercise. You can use [pysteps.datasets.load_dataset](https://pysteps.readthedocs.io/en/stable/generated/pysteps.datasets.load_dataset.html#pysteps.datasets.load_dataset) for this purpose. For the mch data, choose the time period between 2015-05-15 15:50-16:50 UTC. For "fmi", choose 2016-09-28 14:45-15:50 UTC. Use pysteps functions to read the time series into a numpy array and examine the metadata.
 
 Note the structure of the metadata and the data array. The metadata is required and updated by many pysteps functions, and it contains information about the time, geographical extent, and the units of the data. The data array contains the precipitation values in the specified units. The metadata should contain the following information:
+
 - `accutime`: accumulation time (minutes) for computing the quantity contained in the data
 - `cartesian_unit`: the distance unit of the geographical coordinates
 - `institution`: institution providing the data
@@ -29,7 +30,13 @@ Note the structure of the metadata and the data array. The metadata is required 
 
 ## Read a dataset processed in the previous sessions
 
-For the data processed in the previous sessions, we can't use an existing pysteps importer. Instead, read the data with `xarray.load_dataset` and convert it to a numpy array. The data should be in the format of a 3D numpy array with dimensions (time, x, y), where x and y are the spatial dimensions of the data. The metadata should be stored in a dictionary with the keys
+We have uploaded an example dataset of radar and CML data processed with the methods introduced in the merging session.
+The datasets are located in the `nowcasting-session/data` folder, and the following files are available:
+
+- `OpenRainER_cml.nv`: interpolated CML data in the OpenSense NetCDF format. The file contains several versions of the interpolation in the `rainfall_interpolateIDW_10`, `rainfall_interpolateIDW_20` and `rainfall_interpolateIDW_40` variables.
+- `OpenRainER_radar.nc`: radar data in the OpenSense NetCDF format.
+
+For this, we can't use an existing pysteps importer. Instead, read the data with `xarray.load_dataset` and convert it to a numpy array. The data should be in the format of a 3D numpy array with dimensions (time, x, y), where x and y are the spatial dimensions of the data. The metadata should be stored in a dictionary with the keys described previously.
 
 Note that the data is provided in a latitude-longitude coordinate system with a slightly varying grid spacing. Usually pysteps expects data in a metric coordinate system with constant grid spacing. However, in this small domain we can treat the lat-lon grid as metric. Note that this will impact how spatial processing methods, such as upsampling and clipping the domain.
 
