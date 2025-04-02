@@ -1,0 +1,1 @@
+plot_sim_ref_ts(daily_sim_valid_10420, beg_time='2015-07-01', end_time='2021-08-01')
