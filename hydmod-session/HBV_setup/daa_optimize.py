@@ -251,22 +251,22 @@ def main(prms_buds_dict, inp_dfe, cat_area, secs_per_step = 86400, output_dir=r'
 
     # Save all as text. These can be viewed in MS Excel.
     sim_otps_df.to_csv(
-        ot_dir / f'sim_{cat_label[0]}_otps_df.csv',
+        ot_dir / f'sim_{cat_label}_otps_df.csv',
         sep=';',
         float_format='%0.6f')
 
     sim_dis_df.to_csv(
-        ot_dir / f'dis_sim_{cat_label[0]}_df.csv',
+        ot_dir / f'dis_sim_{cat_label}_df.csv',
         sep=';',
         float_format='%0.1f')
 
     prms_sr.to_csv(
-        ot_dir / f'prms_{cat_label[0]}_sr.csv',
+        ot_dir / f'prms_{cat_label}_sr.csv',
         sep=';',
         float_format='%0.6f')
 
     prf_sr.to_csv(
-        ot_dir / f'prf_{cat_label[0]}_sr.csv',
+        ot_dir / f'prf_{cat_label}_sr.csv',
         sep=';',
         float_format='%0.6f')
     #======================================================================
