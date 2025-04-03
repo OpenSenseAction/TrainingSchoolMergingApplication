@@ -8,6 +8,10 @@ hydmod-session/daily/calibration_hbv_daily/*
 os-merging-session/example_data
 intro_session/example_data
 
+# hydmod session data
+hydmod-session/daily/validation_hbv_daily
+hydmod-session/hourly/validation*
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
